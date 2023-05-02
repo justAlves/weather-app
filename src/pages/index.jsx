@@ -56,8 +56,8 @@ function App() {
             <h3 className='mt-2 font-bold text-xl'>
               {data?.main.temp_max + '/' + data?.main.temp_min}
             </h3>
-            <img 
-              src={`http://openweathermap.org/img/wn/${data?.weather[0].icon}.png`} 
+            <img
+              src={`http://openweathermap.org/img/wn/${data?.weather[0].icon}.png`}
               alt={`${data?.weather[0].description}`}
               className='mt-4 w-20'
             />
@@ -75,7 +75,7 @@ function App() {
         </div>
       );
     }
-    
+
     return;
   }
 
@@ -88,9 +88,9 @@ function App() {
       </div>
       <div className='bg-zinc-900 p-10 rounded shadow-2xl max-sm:w-5/6 text-sky-50'>
         <div className='flex items-center justify-center'>
-          <input 
+          <input
             type="text
-            " 
+            "
             placeholder='Insira o nome da localização'
             className='p-4 w-64 text-zinc-900'
             value={city}
